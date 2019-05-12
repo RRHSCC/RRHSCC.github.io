@@ -1,0 +1,193 @@
+<!DOCTYPE html><html>
+<head>
+  <title>Pokedex</title>
+</head>
+  <style>
+    body {
+    background-color: #DC143C;
+}
+
+    footer2 {
+      background-color: white;
+      position: relative;
+      top: -100px;
+      right: -300px;
+      display: block;
+      width: 800px;
+      height: 400px;
+    }
+    
+    footer {
+      position: relative;
+      top: -106px;
+      right: -400px;
+    }
+    
+    footer3 {
+     position: relative;
+     right: -300px;
+    }
+    
+    button {
+     background:none;
+     color:inherit;
+     border:none; 
+     font: inherit;
+     border-bottom:1px solid #444; 
+     cursor: pointer;
+}
+    
+/* dropdown button */
+.dropbtn {
+  background-color:
+  #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+ }
+ 
+ .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  backgroundcolor:
+#f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px
+  0px rgba (0,0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.show {display:block;}
+  </style>
+<body>
+  <header>
+  <h1>Pokedex V. 0.0.5</h1>
+      <div class="dropdown">
+  <button onclick="dropGen()" class="dropbtn">Generation</button>
+        <div id="myDropdown" class="dropdown-content">
+    <a href="#">Gen 1</a>
+    <a href="#">Gen 2</a>
+    <a href="#">Gen 3</a>
+  </div>
+</div>
+    <script>
+function dropGen() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+      
+      function popup() {
+        alert("Testing Successful");
+      }
+      
+function PokeChange1() {
+    document.getElementById("Pokeset1").innerHTML = "Bulbasaur";
+    document.getElementById("Pokeset2").innerHTML = "Ivysaur";
+    document.getElementById("Pokeset3").innerHTML = "Venusaur";
+    document.getElementById("Pokeset4").innerHTML = "Charmander";
+    document.getElementById("Pokeset5").innerHTML = "Charmeleon";
+    document.getElementById("Pokeset6").innerHTML = "Charizard";
+    document.getElementById("Pokeset7").innerHTML = "Squirtle";
+    document.getElementById("Pokeset8").innerHTML = "Wartortle";
+    document.getElementById("Pokeset9").innerHTML = "Blastoise";
+    document.getElementById("Pokeset10").innerHTML = "Caterpie";
+    document.getElementById("Pokeset11").innerHTML = "Metapod";
+    document.getElementById("Pokeset12").innerHTML = "Butterfree";
+    document.getElementById("Pokeset13").innerHTML = "Weedle";
+    document.getElementById("Pokeset14").innerHTML = "Kakuna";
+    document.getElementById("Pokeset15").innerHTML = "Beedrill";
+ 
+}
+      
+      function PokeChange2() {
+    document.getElementById("Pokeset1").innerHTML = "Pidgey";
+    document.getElementById("Pokeset2").innerHTML = "Pidgeotto";
+    document.getElementById("Pokeset3").innerHTML = "Pidgeot";
+    document.getElementById("Pokeset4").innerHTML = "Rattata";
+    document.getElementById("Pokeset5").innerHTML = "Raticate";
+    document.getElementById("Pokeset6").innerHTML = "Spearow";
+    document.getElementById("Pokeset7").innerHTML = "Fearow";
+    document.getElementById("Pokeset8").innerHTML = "Ekans";
+    document.getElementById("Pokeset9").innerHTML = "Arbok";
+    document.getElementById("Pokeset10").innerHTML = "Pikachu";
+    document.getElementById("Pokeset11").innerHTML = "Raichu";
+    document.getElementById("Pokeset12").innerHTML = "Sandshrew";
+    document.getElementById("Pokeset13").innerHTML = "Sandslash";
+    document.getElementById("Pokeset14").innerHTML = "Nidoran♀";
+    document.getElementById("Pokeset15").innerHTML = "Nidorina";
+ 
+}
+</script>
+  </header>
+    <footer>  
+  <p>Find Pokemon super duper quick.</p>
+      <br>
+    <input type="text" class="searchPokemon" placeholder="Search for a Pokemon">
+   <input type="button" value="Search">
+  </footer>
+   <footer2>
+      <br>
+     <div id=
+     <p2 id="Pokeset1">Bulbasuar</p2>
+      <br>
+     <p3 id="Pokeset2">Ivysaur</p3>
+      <br>
+     <p4 id="Pokeset3">Venusaur</p4>
+      <br>
+     <p5 id="Pokeset4">Charmander</p5>
+      <br>
+     <p6 id="Pokeset5">Charmeleon</p6>
+      <br>
+     <p7 id="Pokeset6">Charizard</p7>
+      <br>
+     <p8 id="Pokeset7">Squirtle</p8>
+      <br>
+     <p9 id="Pokeset8">Wartortle</p9>
+      <br>
+     <p10 id="Pokeset9">Blastoise</p10>
+      <br>
+     <p11 id="Pokeset10">Caterpie</p11>
+      <br>
+     <p12 id="Pokeset11">Metapod</p12>
+      <br>
+     <p13 id="Pokeset12">Butterfree</p13>
+      <br>
+     <p14 id="Pokeset13">Weedle</p14>
+      <br>
+     <p15 id="Pokeset14">Kakuna</p15>
+      <br>
+     <p16 id="Pokeset15">Beedrill</p16>
+  </footer2>
+  <footer3> 
+     <input type="button" onclick="PokeChange1()" value="1" id="PokePage1">
+    <input type="button" onclick="PokeChange2()" value="2" id="PokePage2">
+  </footer3>
+</body>
+</html>
