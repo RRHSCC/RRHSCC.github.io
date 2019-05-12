@@ -1,0 +1,70 @@
+<!DOCTYPE html><html>
+<head>
+  <title>Card Game</title>
+</head>
+  <style>
+  </style>
+<body>
+  <header>
+    <h1>Card Game V. 0.0.1</h1>
+  </header>
+  <script>
+
+const suits = [
+  "Hearts",
+  "Spades",
+  "Clubs",
+  "Diamonds",
+]
+
+function getCard() {
+  var value = Math.floor(Math.random() * (13 - 1) + 1)
+    if (value === 11) {
+      value = "Jack"
+    }
+    else if (value === 12) {
+      value = "Queen"
+    }
+    else if (value === 13) {
+      value = "King"
+    }
+    else if (value === 1) {
+      value = "Ace"
+    }
+
+  document.getElementById("card").innerHTML = (value + " of " + suits[Math.floor(Math.random() * suits.length)]);
+
+  var value = Math.floor(Math.random() * (13 - 1) + 1)
+    if (value === 11) {
+      value = "Jack"
+    }
+    else if (value === 12) {
+      value = "Queen"
+    }
+    else if (value === 13) {
+      value = "King"
+    }
+    else if (value === 1) {
+      value = "Ace"
+    }
+
+    document.getElementById("card2").innerHTML = (value + " of " + suits[Math.floor(Math.random() * suits.length)]);
+}
+    function cardTest() {
+      document.getElementById()
+    }
+
+
+  </script>
+  <footer>
+    <p1>Your generated card:</p>
+    <p2 id="card"></p2>
+    <p>The Computers generated card:</p>
+    <p3 id="card2"></p3>
+  </footer>
+  <footer2>
+    <br>
+    <input type="button" onclick="getCard()" value="Get a card!" id="Button">
+  </footer2>
+</body>
+</html>
