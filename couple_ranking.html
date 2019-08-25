@@ -9,14 +9,62 @@
     <h1>Couple Ranking</h1>
   </header>
   <script>
-var iscore = 0;
+    const iscore = 0;
+    const uscore = 0;
+    const scoreButton = document.getElementById("score");
+    const questionContainer = document.getElementById("question");
+    const iQuestions = [
+      {
+       question: "Do you enjoy when it is just you talking or when you have a conversation with another?",
+       answers: {
+         a: "Yes",
+         b: "No",
+          },
+        question: "Do you try to avoid small talk?",
+        answers: {
+          a: "Yes",
+          b: "No",
+          },
+        }
+     ];
     
-    document.getElementById("score").innerHTML = iscore;
+    function showScores() {}
+    
+    function buildQuestions() {
+      const output = [];
+      
+      iQuestions.forEach( 
+        (currentQuestion, questionNumber) => {
+          const answers = [];
+           for(letter in currentQuestion.answers){
+            answers.push(
+              <label>
+                <input type="radio" name="questions${questionNumber}" value="${letter}">
+                ${letter} :
+                ${currentQuestion.answers[letters]}
+              </label>
+              );
+            }
+          
+          output.push(
+        <div class="question"> ${currentQuestion.question} </div>
+        <div class="answers"> ${answers.join('')} </div>
+      );
+          }
+      );
+      quizContainer.innerHTML = output.join('');
+    }
+    
+    buildQuestions()
+    scoreButton.addEventListener('click', showScore);
   </script>
   <footer>
+    <button id="score">Show Score</button>
     <p>Your score:</p>
-    <p1 id="score"></p1>
+    <div id="iscore"></div>
+    <div id="uscore"</div>
   </footer>
+  <div id="question></div>
   <footer2>
     <a href="index.html">Go back</a>
   </footer2>
