@@ -28,36 +28,10 @@
         }
      ];
     
+    function buildQuestions() {}
+	  
     function showScores() {}
     
-    function showQuestions(iQuestions, quizContainer){
-	const output = [];
-
-
-	for(var i=0; i<iQuestions.length; i++){
-		
-		answers = [];
-    
-		for(letter in iQuestions[i].answers){
-
-			answers.push(
-				'<label>'
-					+ '<input type="radio" name="iQuestion'+i+'" value="'+letter+'">'
-					+ letter + ': '
-					+ iQuestions[i].answers[letter]
-				+ '</label>'
-			);
-		}
-
-		output.push(
-			'<div class="iQuestion">' + iQuestions[i].iQuestion + '</div>'
-			+ '<div class="answers">' + answers.join('') + '</div>'
-		);
-	}
-
-	quizContainer.innerHTML = output.join('');
-}
-
     
     buildQuestions()
     scoreButton.addEventListener('click', showScore);
