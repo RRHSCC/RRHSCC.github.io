@@ -5,6 +5,10 @@ code {
 	font-color: 'gray';
 	font-family: 'Inconsolata', monospace;
 }
+
+footer3 {
+	background-color: #37eb34;	
+}
 blink {
 	animation: blinker 0.0169491525s linear infinite;
 	}
