@@ -37,12 +37,14 @@
 </div>
   <script>
 
-const suits = [
-  "Hearts",
-  "Spades",
-  "Clubs",
-  "Diamonds",
-]
+suits = new Array();
+    suits[0] = 'https://cdn.iconscout.com/icon/free/png-256/heart-suit-card-37956.png';
+    suits[1] = 
+    'https://upload.wikimedia.org/wikipedia/en/thumb/0/0a/Card_club.svg/977px-Card_club.svg.png';
+    suits[2] =
+    'https://dejpknyizje2n.cloudfront.net/svgcustom/clipart/preview/diamond-shape-1876-13147-300x300.png';
+    suits[3] = 
+    'https://svgsilh.com/svg/145116.svg';
 
 const values = [
   "Ace",
@@ -62,13 +64,19 @@ const values = [
   window.onload = function getCard() {
     document.getElementById("card").innerHTML = (values[Math.floor(Math.random() * values.length)]);
 
-  document.getElementById("suit").innerHTML = (suits[Math.floor(Math.random() * suits.length)]);
+    const num = Math.floor( Math.random() * suits.length);
+    const img = suits[num];
+    document.getElementById("suit").innerHTML = ('<img src="' + img + '" width="30px">')
+
 }
   function getCard() {
     document.getElementById("card").innerHTML = (values[Math.floor(Math.random() * values.length)]);
-
-  document.getElementById("suit").innerHTML = (suits[Math.floor(Math.random() * suits.length)]);
+    
+    const num = Math.floor( Math.random() * suits.length);
+    const img = suits[num];
+    document.getElementById("suit").innerHTML = ('<img src="' + img + '" width="30px">')
 }
+
   </script>
   <input type="button" onclick="getCard()" value="Get a card!" id="Button">
     <br>
