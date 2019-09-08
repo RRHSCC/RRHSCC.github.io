@@ -8,6 +8,33 @@
   <header>
     <h1>Card Game V. 0.0.1</h1>
   </header>
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 15px;
+  text-align: center
+}
+</style>
+</head>
+<body>
+  
+<div class="card">
+  <div class="container">
+    <br>
+    <p2 id="card"></p2> 
+    <p>
+    <p3 id="suit"></p3> 
+  </div>
+</div>
   <script>
 
 const suits = [
@@ -17,56 +44,34 @@ const suits = [
   "Diamonds",
 ]
 
-function getCard() {
-  var value = Math.floor(Math.random() * (13 - 1) + 1)
-    if (value === 11) {
-      value = "Jack"
-    }
-    else if (value === 12) {
-      value = "Queen"
-    }
-    else if (value === 13) {
-      value = "King"
-    }
-    else if (value === 1) {
-      value = "Ace"
-    }
+const values = [
+  "Ace",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "10",
+  "Jack",
+  "Queen",
+  "King",
+]
+  window.onload = function getCard() {
+    document.getElementById("card").innerHTML = (values[Math.floor(Math.random() * values.length)]);
 
-  document.getElementById("card").innerHTML = (value + " of " + suits[Math.floor(Math.random() * suits.length)]);
-
-  var value = Math.floor(Math.random() * (13 - 1) + 1)
-    if (value === 11) {
-      value = "Jack"
-    }
-    else if (value === 12) {
-      value = "Queen"
-    }
-    else if (value === 13) {
-      value = "King"
-    }
-    else if (value === 1) {
-      value = "Ace"
-    }
-
-    document.getElementById("card2").innerHTML = (value + " of " + suits[Math.floor(Math.random() * suits.length)]);
+  document.getElementById("suit").innerHTML = (suits[Math.floor(Math.random() * suits.length)]);
 }
-    function cardTest() {
-      document.getElementById()
-    }
+  function getCard() {
+    document.getElementById("card").innerHTML = (values[Math.floor(Math.random() * values.length)]);
 
-
+  document.getElementById("suit").innerHTML = (suits[Math.floor(Math.random() * suits.length)]);
+}
   </script>
-  <footer>
-    <p1>Your generated card:</p1>
-    <p2 id="card"></p2>
-    <p>The Computers generated card:</p>
-    <p3 id="card2"></p3>
-  </footer>
-  <footer2>
-    <br>
-    <input type="button" onclick="getCard()" value="Get a card!" id="Button">
+  <input type="button" onclick="getCard()" value="Get a card!" id="Button">
     <br>
     <a href="index.html">Go back</a>
-  </footer2>
 </body>
 </html>
