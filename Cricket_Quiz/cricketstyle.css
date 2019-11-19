@@ -1,0 +1,21 @@
+#quiz {
+  border-style: solid;
+  
+} 
+
+#results {
+  list-style: none;
+}
+
+#submit {
+  background-color: green;
+  border: 10px;
+  position: relative;
+  left: 5px;
+  color: white;
+}
+
+header {
+  font: bold;
+  font-size: 40px;
+}
