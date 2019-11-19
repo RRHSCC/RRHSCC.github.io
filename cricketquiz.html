@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cricket Quiz</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <header> Cricket Validation Quiz </header>
+  </head>
+  <body>
+    <div id="quiz">
+    <p>1. How many legs do you have?</p>
+    <form name="cricketForm">
+    <input type="radio" name="cricket" id="leg2"> 2 legs.
+    <input type="radio" name="cricket" id="leg6"> 6 legs.
+    <br>
+    <p>2. Do you have any antennae?</p>
+    <input type="radio" name="cricket2" id="ant2"> 2 antennaes.
+    <input type="radio" name="cricket2" id="ant0"> 0 antennaes.
+    <br>
+    <p>3. Plants. You eat them?</p>
+    <input type="radio" name="cricket3" id="eatyes"> I love eating plants. Yummy.
+    <input type="radio" name="cricket3" id="eatno"> Plants? I eat real food. Meat.
+    <br>
+    <p>4. How do you feel about the cold</p>
+    <input type="radio" name="cricket4" id="coldno"> I hate the cold with a passion.
+    <input type="radio" name="cricket4" id="coldyes"> The cold isn't that bad honestly. 
+    <br>
+    </form>
+    <input type="button" value="Submit" id="submit" onclick="cricketCheck()">
+    </div>
+    <p2>Results:</p2>
+    <div id="results"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
