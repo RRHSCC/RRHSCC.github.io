@@ -2,6 +2,12 @@ body {
 	font-family: 'Roboto', sans-serif;
 	line-height: 1.5rem;
 }
+
+p {
+	margin-block-start: 2em;
+	margin-block-end: 2em;
+}
+
 code {
 	font-color: 'gray';
 	font-family: 'Inconsolata', monospace;
