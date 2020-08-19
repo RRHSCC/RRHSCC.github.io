@@ -9,6 +9,8 @@ code {
 
 .top {
 	margin: 0 auto;
+	height: 20vw;
+	min-height: 200px;
 	display: block;
 }
 
