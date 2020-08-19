@@ -14,8 +14,8 @@ code {
 
 .top {
 	margin: 0 auto;
-	height: 20vw;
-	min-height: 200px;
+	height: 30vh;
+	min-height: 400px;
 	display: block;
 }
 
@@ -27,16 +27,16 @@ blink {
 	animation: blinker 0.0169491525s linear infinite;
 }
 @keyframes blinker {	
-50% { opacity: 0; }
+	50% { opacity: 0; }
 }
 .blink-one {
 	animation: blinker-one 0.0169491525s linear infinite;
 }
 @keyframes blinker-one {	
-		0% { opacity: 0; }
+	0% { opacity: 0; }
 }
 .blink-two {
-animation: blinker-two 0.0169491525s linear infinite;
+	animation: blinker-two 0.0169491525s linear infinite;
 }
 @keyframes blinker-two {	
 	100% { opacity: 0; }
