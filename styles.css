@@ -35,9 +35,8 @@ code {
 .agenda-container {
 	width: 100%;
 	max-width: 800px;
-	padding-top: 56.25%;
+	padding-top: calc(56.25% + 29px);
 	position: relative;
-	margin: 1em auto;
 }
 
 blink {
