@@ -13,14 +13,14 @@ code {
 }
 
 .top {
-	margin: 0 auto;
+	margin: 0px auto;
 	height: 30vh;
 	min-height: 300px;
 	display: block;
 }
 
 .content {
-	margin: 0 100px;
+	margin: 0px 100px;
 }
 
 .agenda {
