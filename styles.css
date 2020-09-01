@@ -23,6 +23,11 @@ code {
 	margin: 0 100px;
 }
 
+.agenda {
+	width: 100%;
+	max-width: 500px;
+}
+
 blink {
 	animation: blinker 0.0169491525s linear infinite;
 }
