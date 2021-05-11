@@ -11,11 +11,15 @@ body {
 
 ul {
   list-style-type: none;
-  margin: 0;
-  left: 100%;
+  left: 10%;
+}
+
+.topnav {
   overflow: hidden;
   background-color: #333;
-  width: 23%;
+  width: 22%;
+  border: 1px solid black;
+  left: auto;
 }
 
 li {
