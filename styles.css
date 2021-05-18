@@ -10,22 +10,24 @@ body {
 }
 
 ul {
+  margin-top:0px;
+  margin-bottom:0px;
   list-style-type: none;
   left: 10%;
   padding: 0;
-  margin: 0;
 }
 
 .topnav {
   overflow: hidden;
   background-color: #333;
-  width: 22%;
+  width: 12.25%;
   border: 1px solid black;
   left: auto;
 }
 
 li {
   float: left;
+  border: 1px solid black;
 }
 
 li a {
